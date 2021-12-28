@@ -25,11 +25,10 @@ const posOrNeg = (numberString) => {
     // return the same number as a string with a - in front of it
     return `-${number}`;
   } else {
+    // if the number is already negative, return the same number without the - symbol
     let positive = numberString.replace("-", "");
     return positive;
   }
-
-  // if the number is already negative, return the same number without the - symbol
 };
 
 module.exports = {
