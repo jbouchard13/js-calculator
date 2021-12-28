@@ -9,6 +9,7 @@ buttons.forEach((button) => {
 });
 
 const updateTime = () => {
+  console.log("time");
   // use Date to gather information from current day
   let currentDate = new Date();
   // get the current time
@@ -43,4 +44,4 @@ const divide = (a, b) => {
 
 // update the time on the 'phone' with initial page load and every minute after
 updateTime();
-setInterval(updateTime(), 1000);
+setInterval(updateTime, 1000);
