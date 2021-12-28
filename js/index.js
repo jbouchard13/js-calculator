@@ -9,7 +9,6 @@ buttons.forEach((button) => {
 });
 
 const updateTime = () => {
-  console.log("time");
   // use Date to gather information from current day
   let currentDate = new Date();
   // get the current time
@@ -19,27 +18,12 @@ const updateTime = () => {
   if (hours > 12) {
     hours = hours - 12;
   }
+  // if minutes are less than 10 make sure they display as 00, 01, 02, etc
+  if (minutes < 10) {
+    minutes = `0${minutes}`;
+  }
   // update the #time display with the current time
   timeEl.textContent = `${hours}:${minutes}`;
-};
-
-const add = (a, b) => {
-  return a + b;
-};
-
-const subtract = (a, b) => {
-  return a - b;
-};
-
-const multiply = (a, b) => {
-  return a * b;
-};
-
-const divide = (a, b) => {
-  if (b === 0) {
-    return `You can't divide by 0`;
-  }
-  return a / b;
 };
 
 // update the time on the 'phone' with initial page load and every minute after
