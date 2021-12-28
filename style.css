@@ -3,6 +3,17 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.phone-container {
+  display: flex;
+  width: 341px;
+  height: 614px;
+  background-color: silver;
+  justify-content: center;
+  align-items: center;
+  border-radius: 32px;
 }
 
 .container {
@@ -13,26 +24,53 @@ body {
   width: 325px;
   height: 600px;
   background-color: #1c1c1c;
-  border-radius: 30px;
+  border-radius: 32px;
+  border: solid 5px black;
 }
 
 .top-container {
-  display: none;
+  display: flex;
   justify-content: space-between;
   width: 100%;
-  margin-top: -60px;
+  margin-top: -82px;
   font-size: 12px;
+}
+
+#time {
+  width: 60px;
+  margin-top: 10px;
+  margin-left: 10px;
+  text-align: center;
+}
+
+#signal {
+  width: 60px;
+  margin-top: 10px;
+  margin-right: 10px;
+  text-align: center;
 }
 
 #notch {
   background-color: black;
   padding-left: 20px;
   padding-right: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 30px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
   width: 35%;
   align-self: center;
 }
 
+.display-container {
+  display: flex;
+  justify-items: right;
+  margin-bottom: -50px;
+  margin-top: 10px;
+}
+
+.display {
+  font-size: 50px;
+}
 .home-line {
   background-color: white;
   padding: 2px;
@@ -48,6 +86,11 @@ body {
   grid-template-columns: [col1] 1fr [col2] 1fr [col3] 1fr [col4] 1fr;
   grid-template-rows: [row1] 1fr [row2] 1fr [row3] 1fr [row4] 1fr;
   margin-bottom: -50px;
+}
+
+#zeroDiv {
+  text-align: left;
+  padding-left: 17px;
 }
 
 button {

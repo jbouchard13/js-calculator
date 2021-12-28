@@ -8,35 +8,45 @@
     <title>Calculator</title>
   </head>
   <body>
-    <div class="container">
-      <div class="top-container">
-        <div id="time">7:30</div>
-        <div id="notch"></div>
-        <div id="signal">No Service</div>
+    <div class="phone-container">
+      <div class="container">
+        <div class="top-container">
+          <div id="time">7:30</div>
+          <div id="notch"></div>
+          <div id="signal">No Service</div>
+        </div>
+        <div class="display-container">
+          <div class="display">0</div>
+        </div>
+        <div class="buttons-container">
+          <button id="clear" name="clear" class="operators">AC</button>
+          <button id="negative" name="negative" class="operators">+-</button>
+          <button id="percent" name="percent" class="operators">%</button>
+          <button id="divide" name="/" class="basic-operators">÷</button>
+          <button id="seven" name="7">7</button>
+          <button id="eight" name="8">8</button>
+          <button id="nine" name="9">9</button>
+          <button id="multiply" name="multiply" class="basic-operators">
+            X
+          </button>
+          <button id="four" name="4">4</button>
+          <button id="five" name="5">5</button>
+          <button id="six" name="6">6</button>
+          <button id="subtract" name="subtract" class="basic-operators">
+            -
+          </button>
+          <button id="one" name="1">1</button>
+          <button id="two" name="2">2</button>
+          <button id="three" name="3">3</button>
+          <button id="addition" name="addition" class="basic-operators">
+            +
+          </button>
+          <button id="zero" name="0"><div id="zeroDiv">0</div></button>
+          <button id="decimal" name="decimal">.</button>
+          <button id="equals" name="equals" class="basic-operators">=</button>
+        </div>
+        <div class="home-line"></div>
       </div>
-      <div class="display-container">0</div>
-      <div class="buttons-container">
-        <button id="clear" class="operators">AC</button>
-        <button id="negative" class="operators">+-</button>
-        <button id="percent" class="operators">%</button>
-        <button id="divide" class="basic-operators">÷</button>
-        <button id="seven">7</button>
-        <button id="eight">8</button>
-        <button id="nine">9</button>
-        <button id="multiply" class="basic-operators">X</button>
-        <button id="four">4</button>
-        <button id="five">5</button>
-        <button id="six">6</button>
-        <button id="subtract" class="basic-operators">-</button>
-        <button id="one">1</button>
-        <button id="two">2</button>
-        <button id="three">3</button>
-        <button id="addition" class="basic-operators">+</button>
-        <button id="zero">0</button>
-        <button id="decimal">.</button>
-        <button id="equals" class="basic-operators">=</button>
-      </div>
-      <div class="home-line"></div>
     </div>
     <script src="script.js"></script>
   </body>
