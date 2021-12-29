@@ -105,10 +105,14 @@ button {
 }
 
 button:hover {
+  transition-property: background-color;
+  transition-duration: 0.25s;
   background-color: #838080;
 }
 
 .basic-operators {
+  transition-property: background-color;
+  transition-duration: 0.25s;
   background-color: #ff9500;
 }
 
@@ -117,6 +121,8 @@ button:hover {
 }
 
 .operators {
+  transition-property: background-color;
+  transition-duration: 0.25s;
   background-color: #d4d4d2;
   color: #1c1c1c;
 }
@@ -126,4 +132,15 @@ button:hover {
   grid-column-end: col3;
   width: auto;
   border-radius: 30px;
+}
+
+.button-focus {
+  transition-property: background-color;
+  transition-duration: 0.25s;
+  background-color: #d4d4d2;
+  color: #ff9500;
+}
+
+.button-focus:hover {
+  background-color: white;
 }
